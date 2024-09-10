@@ -1,0 +1,33 @@
+@model IEnumerable<SEGURA_ASSETMENTS.Models.Sede>
+
+@{
+    ViewData["Title"] = "Lista de Sedes";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre Sede</th>
+            <th>Ciudad</th>
+            <th>Capacidad</th>
+            <th>Habitaciones</th>
+            <th>Servicios</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sede in Model)
+        {
+            <tr>
+                <td>@sede.ID_Sedes</td>
+                <td>@sede.NombreSede</td>
+                <td>@sede.Ciudad</td>
+                <td>@sede.CapacidadSede</td>
+                <td>@sede.NumHabitaciones</td>
+                <td>@sede.ServiciosSede</td>
+            </tr>
+        }
+    </tbody>
+</table>

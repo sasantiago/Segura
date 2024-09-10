@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/SEGURA-ASSETMENTS.props" />
+</Project>
