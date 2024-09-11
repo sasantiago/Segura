@@ -1,9 +1,12 @@
 
 
+using System.ComponentModel.DataAnnotations;
+
 namespace SEGURA_ASSETMENTS.Models
 {
     public class Reserva
     {
+        [Key]
         public int ID_Reservas { get; set; }
         public DateTime FechaReserva { get; set; }
         public DateTime FechaLlegada { get; set; }

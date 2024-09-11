@@ -18,12 +18,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/hackaton/Documentos/SEGURA-ASSETMENTS
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/hackaton/Documentos/SEGURA-ASSETMENTS/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/hackaton/Documentos/SEGURA-ASSETMENTS/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/hackaton/Documentos/SEGURA-ASSETMENTS/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/hackaton/Documentos/SEGURA-ASSETMENTS/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/hackaton/Documentos/SEGURA-ASSETMENTS/Views/Registers/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXJzL1JlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/hackaton/Documentos/SEGURA-ASSETMENTS/Views/Sedes/Index.cshtml]
@@ -36,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/hackaton/Documentos/SEGURA-ASSETMENTS/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/hackaton/Documentos/SEGURA-ASSETMENTS/Views/Tarifas/Tarifas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFyaWZhcy9UYXJpZmFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/hackaton/Documentos/SEGURA-ASSETMENTS/Views/_ViewImports.cshtml]

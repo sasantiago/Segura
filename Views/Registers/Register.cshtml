@@ -1,0 +1,101 @@
+@model SEGURA_ASSETMENTS.Models.Cliente
+
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<h2>Registro</h2>
+
+<form asp-action="Register" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="customer_NombreCompleto" class="control-label"></label>
+        <input asp-for="customer_NombreCompleto" class="form-control" />
+        <span asp-validation-for="customer_NombreCompleto" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Roll" class="control-label"></label>
+        <input asp-for="Roll" class="form-control" />
+        <span asp-validation-for="Roll" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="customer_fechaNacimiento" class="control-label"></label>
+        <input asp-for="customer_fechaNacimiento" type="date" class="form-control" />
+        <span asp-validation-for="customer_fechaNacimiento" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Celular" class="control-label"></label>
+        <input asp-for="Celular" class="form-control" />
+        <span asp-validation-for="Celular" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Correo" class="control-label"></label>
+        <input asp-for="Correo" class="form-control" />
+        <span asp-validation-for="Correo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Id_Departamento" class="control-label"></label>
+        <input asp-for="Id_Departamento" class="form-control" />
+        <span asp-validation-for="Id_Departamento" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Municipio" class="control-label"></label>
+        <input asp-for="Municipio" class="form-control" />
+        <span asp-validation-for="Municipio" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Barrio" class="control-label"></label>
+        <input asp-for="Barrio" class="form-control" />
+        <span asp-validation-for="Barrio" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Direccion" class="control-label"></label>
+        <input asp-for="Direccion" class="form-control" />
+        <span asp-validation-for="Direccion" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Pregunta_Secreta" class="control-label"></label>
+        <input asp-for="Pregunta_Secreta" class="form-control" />
+        <span asp-validation-for="Pregunta_Secreta" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Respuesta_Secreta" class="control-label"></label>
+        <input asp-for="Respuesta_Secreta" class="form-control" />
+        <span asp-validation-for="Respuesta_Secreta" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Auth_Correo" class="control-label"></label>
+        <input asp-for="Auth_Correo" class="form-control" />
+        <span asp-validation-for="Auth_Correo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Auth_Celular" class="control-label"></label>
+        <input asp-for="Auth_Celular" class="form-control" />
+        <span asp-validation-for="Auth_Celular" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Contrasena" class="control-label"></label>
+        <input asp-for="Contrasena" type="password" class="form-control" />
+        <span asp-validation-for="Contrasena" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-danger">Registrar</button>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

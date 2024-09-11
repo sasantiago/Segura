@@ -1,20 +1,25 @@
+using System.ComponentModel.DataAnnotations;
 
 namespace SEGURA_ASSETMENTS.Models
 {
     public class Sede
-{
-    public int ID_Sedes { get; set; }
-    public string Tipo { get; set; }
-    public string NombreSede { get; set; }
-    public string Ciudad { get; set; }
-    public int CapacidadSede { get; set; }
-    public int NumHabitaciones { get; set; }
-    public int ID_Habitacion { get; set; }
-    public string ServiciosSede { get; set; }
+    {
+        [Key]
+        public int ID_Sedes { get; set; }
+        [Required]
+        public string Tipo { get; set; }
+        [Required]
+        public string Nombre_sede { get; set; }
+        [Required]
+        public string Ciudad { get; set; }
+        public int CapacidadSede { get; set; }
+        public int NumHabitaciones { get; set; }
+        public int HabitacionId { get; set; }
+        [Required]
+        public string ServiciosSede { get; set; }
 
-    // Relaciones
-    public Habitacion Habitacion { get; set; }
-    public ICollection<Reserva> Reservas { get; set; }
-}
-
+        // Relaciones
+        public Habitacion? Habitacion { get; set; }
+        public ICollection<Reserva>? Reservas { get; set; }
+    }
 }

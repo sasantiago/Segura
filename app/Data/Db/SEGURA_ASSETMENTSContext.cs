@@ -1,9 +1,10 @@
 using SEGURA_ASSETMENTS.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace SEGURA_ASSETMENTS.Data
 {
-    public class SEGURA_ASSETMENTSContext : DbContext
+    public class SEGURA_ASSETMENTSContext : IdentityDbContext<Cliente>
     {
         public SEGURA_ASSETMENTSContext(DbContextOptions<SEGURA_ASSETMENTSContext> options) : base(options)
         {

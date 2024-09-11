@@ -1,10 +1,13 @@
 
 
+using System.ComponentModel.DataAnnotations;
+
 namespace SEGURA_ASSETMENTS.Models
 {
     public class Habitacion
     {
-        public int ID_Habitaciones { get; set; }
+        [Key]
+        public int Id_Habitaciones { get; set; }
         public string Nombre { get; set; }
         public int CamasSencillas { get; set; }
         public int CamasDobles { get; set; }
@@ -15,6 +18,8 @@ namespace SEGURA_ASSETMENTS.Models
         public string Cocina { get; set; }
         public string SalaConSofa { get; set; }
         public int Precio { get; set; }
+        
+        // public ICollection<Reserva> Reservas { get; set; }
     }
 
 }

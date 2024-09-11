@@ -11,11 +11,14 @@ public class SedesController : Controller
     {
         _context = context;
     }
+    
+   
+  
 
-    // Acción para obtener la lista de sedes
     public IActionResult Index()
     {
-        var sedes = _context.Sedes.ToList();
-        return View(sedes); // Pasa la lista de sedes a la vista
+        var sede= _context.Sedes.ToList();
+
+        return View(sede); 
     }
 }
