@@ -9,24 +9,24 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            
+            <th>images</th>
             <th>Nombre Sede</th>
-            <th>Ciudad</th>
-            <th>Capacidad</th>
-            <th>Habitaciones</th>
-            <th>Servicios</th>
+            <th>Descripcion</th>
+            <th>Tipo</th>
+            <th>Ubicacion</th>
+            <th>Seleccionar</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var sede in Model)
         {
             <tr>
-               
+                <td><img src="images/mangurama.JPG" alt=""></td>
                 <td>@sede.Nombre_sede</td>
-                <td>@sede.Ciudad</td>
-                <td>@sede.CapacidadSede</td>
-                <td>@sede.NumHabitaciones</td>
                 <td>@sede.ServiciosSede</td>
+                <td>@sede.Tipo</td>
+                <td>@sede.Ciudad</td>
+                <td><a class="btn-btn-danger" asp-action="Fechas" asp-controller="Sedes"></a>seleccionar</td>
             </tr>
         }
     </tbody>

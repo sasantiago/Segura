@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SEGURA-ASSETMENTS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c83c227159b8cc9fe31fa87734b276986035dcc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+884ca7e9fce4d393c5715c1de1b0de549a1e1da8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SEGURA-ASSETMENTS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SEGURA-ASSETMENTS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

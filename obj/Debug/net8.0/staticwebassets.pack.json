@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/hackaton/Documentos/SEGURA-ASSETMENTS/wwwroot/images/bannerLogin.jpg",
+      "PackagePath": "staticwebassets/images/bannerLogin.jpg"
+    },
+    {
+      "Id": "/home/hackaton/Documentos/SEGURA-ASSETMENTS/wwwroot/images/reservas.jpg",
+      "PackagePath": "staticwebassets/images/reservas.jpg"
+    },
+    {
       "Id": "/home/hackaton/Documentos/SEGURA-ASSETMENTS/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
