@@ -1,0 +1,50 @@
+@model IEnumerable<SEGURA_ASSETMENTS.Models.Sede>
+
+@{
+    ViewData["Title"] = "Lista de Sedes";
+}
+
+<h2 class="text-danger">@ViewData["Title"]</h2>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col nav-link w-25 p-3@(ViewContext.RouteData.Values["controller"].ToString() == "Sedes" && ViewContext.RouteData.Values["action"].ToString() == "Index" ? "text-white bg-danger" : "text-dark bg-white")">
+            <p class="fs-3">
+               Sedes Recreativas y Apartamentos
+            </p>
+        </div>
+
+        <div class="col @(ViewContext.RouteData.Values["controller"].ToString() == "Sedes" && ViewContext.RouteData.Values["action"].ToString() == "Fechas" ? "text-white bg-danger" : "text-dark bg-white")">
+            <p class="fs-3" asp-action="Index" asp-controller="Sedes">
+               Seleccione sus fechas
+            </p>
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>images</th>
+            <th>Nombre Sede</th>
+            <th>Descripcion</th>
+            <th>Tipo</th>
+            <th>Ubicacion</th>
+            <th>Seleccionar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sede in Model)
+        {
+            <tr>
+                <td><img src="images/mangurama.JPG" alt=""></td>
+                <td>@sede.Nombre_sede</td>
+                <td>@sede.ServiciosSede</td>
+                <td>@sede.Tipo</td>
+                <td>@sede.Ciudad</td>
+                <td><a class="btn-btn-danger" asp-action="Fechas" asp-controller="Sedes"></a>seleccionar</td>
+            </tr>
+        }
+    </tbody>
+</table>
