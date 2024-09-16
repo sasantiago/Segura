@@ -17,8 +17,12 @@ public class SedesController : Controller
 
     public IActionResult Index()
     {
-        var sede= _context.Sedes.ToList();
-
-        return View(sede); 
+        // var sede= _context.Sedes.ToList();
+        return View(); 
+        // return View(sede); 
+    }
+    public IActionResult Fechas(int? id)
+    {
+        return View();
     }
 }
